@@ -34,7 +34,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Torah Kids Puppets | Menu </title>
+    <title>Parashot Kids Puppets | Las Parashot - Menú </title>
     <link rel="shortcut icon" href="img/icono videos.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos-Parashot.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
@@ -50,6 +50,8 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -210,17 +212,6 @@
         </div>
     </section>
 
-    <section class="contenedor1 services">
-        <img src="img/IconY Torat Kids Puppets.png" alt="">
-        <div class="box-skills">
-            <h5><i class="far fa-check-circle"></i> Estudias</h5>
-            <h5><i class="far fa-check-circle"></i> Aprendes</h5>
-            <h5><i class="far fa-check-circle"></i> Te Diviertes</h5>
-            <h5><i class="far fa-check-circle"></i> De una Manera</h5>
-            <h5><i class="far fa-check-circle"></i> Fácil Y Sencilla</h5>
-        </div>
-        </section>
-
 
             <link rel="stylesheet" href="foot.css">
 
@@ -253,6 +244,76 @@
                     <a href="https://www.youtube.com/channel/UCtYIO1bW3DeDuxR85n3X0QQ" target="_blank"><i4 class="fab fa-youtube"></i4></a>
         </div>
     </footer> 
+
+    <list>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Parashot</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="library-outline"></ion-icon>
+                        </span>
+                        <span class="text">Libro</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="journal-outline"></ion-icon>
+                        </span>
+                        <span class="text">Parashat</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="https://torah-kids-puppets.github.io/VideosPKP.html">
+                        <span class="icon">
+                            <ion-icon name="videocam-outline"></ion-icon>
+                        </span>
+                        <span class="text">Video</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="Leer.html">
+                        <span class="icon">
+                            <ion-icon name="reader-outline"></ion-icon>
+                        </span>
+                        <span class="text">Lectura</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="Resumen.html">
+                        <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="text">Resumen</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </list>        
+        
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+                list.forEach((item)=>
+                item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+        </script>
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2c7049ccc8.js" crossorigin="anonymous"></script>
