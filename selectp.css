@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*
+
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+SeleccionParashot{
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.continerp{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 350px;
+
+}
+
+.containerp .card{
+    position: relative;
+    width: 300px;
+    height:  350px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 10px 10px 20px 10px;
+}
+.containerp .card:hover{
+box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+
+
+.containerp .card:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9c5d00;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.containerp .card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+
+.containerp .card::after{
+    content: "Parashot";
+    position: absolute;
+    top: 40%;
+    left: -20;
+    font-size: 5em;
+    font-style: italic;
+    color: rgb(0 0 0 / 14%)
+}
+
+.containerp .card .imgBx{
+    position: absolute;
+    top: 25%;
+    transform: translateY(-25%);
+    z-index: 10000;
+    width: 95%;
+    height: 220px;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.containerp .card:hover .imgBx{
+    top: 5%;
+    transform: translateY(0%);
+}
+
+.containerp .card .imgBx img{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-5%, -5%);
+  object-fit: cover;
+    height: 170px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.containerp .card .contentBx
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.containerp .card:hover .contentBx{
+    height: 175px;
+}
+
+.containerp .card .contentBx h2p{
+    position: relative;
+    font-weight: 600;
+    font-size: 25px;
+    color: #000;
+}
+
+.containerp .card .contentBx .selectp{
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    display: -webkit-box;
+    padding: 0px 15px 0px 5px
+}
+
+.containerp .card:hover .contentBx .selectp{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+    overflow: overlay;
+}
+
+.containerp .card .contentBx .selectp h3,
+{
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.containerp .card .contentBx .selectp .selpa{
+  object-fit: cover;
+    width: 70px;
+    height: 75px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #111;
+    background: #fff5e1;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    text-decoration: none;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    align-content: center;
+}
+
+.containerp .card .contentBx .selectp .selpa .contpimg{
+    margin-top: 2%;
+    width: 70%;
+    margin:auto;
+    background: transparent;
+}
+
+.containerp .card .contentBx .selectp .selpa img{
+    margin-top: 2%;
+    width: 100%;
+    bottom: 0px;
+    background: transparent;
+}
+
+.containerp .card .contentBx .selectp .selpa hsp{
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 0%;
+}
+
+.containerp .card .contentBx .selectp .selpa:hover{
+    background: #ffdca9;
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+
+.containerp .card .contentBx a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+
+/* Breakpoints responsive */
+
+@media screen and (max-width:800px) {
+
+    .containerp .card{
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    /* About us */
+
+    .containerp .card {
+        width: 220px;
+    }
+
+    .containerp .card:hover:before{
+    height: 100%;
+}
+
+.containerp .card .contentBx h2p{
+    font-size: 20px;
+    background: #ffffff94;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.containerp .card .contentBx:hover h2p{
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+}
+}
+
+
+@media screen and (max-width:220px) {
+
+    /* About us */
+
+    .containerp .card {
+        width: 210px;
+    }
+}
